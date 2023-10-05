@@ -15,12 +15,13 @@ namespace Laboratorio_7___ejercicio_1
 
             float suma = 0f;
             float termino = 0f;
-
-            for (int i = 1; i <= n; i++)
+            int i = 1;
+            while (i <= n)
             {
                 termino = (16f - i) / (3.0f * i);
                 suma += termino;
                 Console.WriteLine("Resultado : " + termino);
+                i++;
             }
 
             Console.WriteLine(suma);
